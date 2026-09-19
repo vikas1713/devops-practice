@@ -1,0 +1,8 @@
+services:
+  checker:
+    build: .
+    container_name: site-checker-app
+
+  redis:
+    image: redis:alpine
+    container_name: site-checker-cache
