@@ -1,0 +1,26 @@
+---
+- name: Basic server setup
+  hosts: local
+  become: true
+  vars:
+    target_user: kumarvi1
+  tasks:
+    - name: Install htop
+      apt:
+        name: htop
+        state: present
+        update_cache: true
+
+    - name: Create a practice directory
+      file:
+        path: "/home/{{ target_user }}/ansible-was-here"
+        state: directory
+        owner: "{{ target_user }}"
+        group: "{{ target_user }}"
+
+    - name: Write a status file
+      copy:
+        content: "Ansible configured this machine.\n"
+        dest: "/home/{{ target_user }}/ansible-was-here/status.txt"
+        owner: "{{ target_user }}"
+        group: "{{ target_user }}"

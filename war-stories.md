@@ -5,3 +5,5 @@ Then I used try/except block for Python's error handling.
 Then I created a docker container from site-checker Python file.
 Then I removed Ubuntu's Docker files and installed official. Also, used Docker-compose plugin to rebuild image with Redis.
 Then I added GitHub Actions workflow to build and run site-checker.
+Then I worked on Ansible. Got sudo errors but fixed that.
+Then I worked on Terraform basics.
