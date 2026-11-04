@@ -1,0 +1,5 @@
+# Vendored setuptools/wheel tooling deps - no direct exploit path for this app
+# Revisit if a newer python:3.11-slim base image resolves these upstream
+CVE-2026-23949
+CVE-2026-24049
+CVE-2025-47273
