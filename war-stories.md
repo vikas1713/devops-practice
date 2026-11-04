@@ -7,3 +7,4 @@ Then I removed Ubuntu's Docker files and installed official. Also, used Docker-c
 Then I added GitHub Actions workflow to build and run site-checker.
 Then I worked on Ansible. Got sudo errors but fixed that.
 Then I worked on Terraform basics.
+Then I tried Kubectl minikube. Also, we should always check cluster health before assuming previous state holds.
