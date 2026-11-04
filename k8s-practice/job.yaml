@@ -1,0 +1,12 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: site-checker-job
+spec:
+  template:
+    spec:
+      containers:
+        - name: site-checker
+          image: site-checker
+          imagePullPolicy: Never
+      restartPolicy: Never
